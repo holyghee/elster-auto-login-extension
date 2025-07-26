@@ -1,22 +1,73 @@
+# Node.js
 node_modules/
-.DS_Store
-*.log
-*.tmp
-.env
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 package-lock.json
+
+# System Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor directories and files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+*~
+
+# Environment files
+.env
+.env.local
+.env.*.local
 
 # Test files
 test-*.js
 debug-*.js
+*.test.js
+coverage/
 
-# Archives
-*.tar.gz
+# Build/Release files
 *.zip
 *.crx
+*.tar.gz
+dist/
+build/
+release/
+release-temp/
 
-# Editor
-.vscode/
-.idea/
+# Chrome Extension specific
+*.pem
+key.pem
 
-# System files
-Thumbs.db
+# Project specific - Original images
+elster.png
+elster-login-page.png
+elster-auto-login-extention-logo.png
+
+# Scripts that shouldn't be in the extension
+prepare-extension.sh
+create-icons.sh
+release-to-github.sh
+
+# Documentation drafts
+*.draft.md
+TODO.md
+NOTES.md
+
+# Logs
+logs/
+*.log
+
+# Cache
+.cache/
+.npm/
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
