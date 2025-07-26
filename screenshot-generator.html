@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Elster Auto-Login Screenshot</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            width: 1280px;
+            height: 800px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .container {
+            text-align: center;
+            z-index: 10;
+        }
+
+        .browser-mockup {
+            width: 800px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+            overflow: hidden;
+        }
+
+        .browser-bar {
+            background: #e8e8e8;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .browser-dots {
+            display: flex;
+            gap: 6px;
+        }
+
+        .dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #999;
+        }
+
+        .dot.red { background: #ff5f57; }
+        .dot.yellow { background: #ffbd2e; }
+        .dot.green { background: #28ca42; }
+
+        .url-bar {
+            flex: 1;
+            background: white;
+            border-radius: 4px;
+            padding: 6px 12px;
+            margin: 0 10px;
+            font-size: 14px;
+            color: #666;
+        }
+
+        .extension-popup {
+            padding: 40px;
+            background: #f9f9f9;
+        }
+
+        .popup-content {
+            width: 400px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            padding: 30px;
+        }
+
+        .logo {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 20px;
+            background-image: url('icon128.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            margin: 0 0 10px;
+            font-size: 28px;
+            color: #333;
+        }
+
+        .tagline {
+            color: #666;
+            font-size: 16px;
+            margin-bottom: 30px;
+        }
+
+        .login-button {
+            width: 100%;
+            padding: 16px;
+            background: #005a9c;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 12px rgba(0, 90, 156, 0.3);
+        }
+
+        .features {
+            text-align: left;
+            background: #f5f5f5;
+            border-radius: 8px;
+            padding: 20px;
+        }
+
+        .feature {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 12px;
+            font-size: 15px;
+            color: #555;
+        }
+
+        .feature:last-child {
+            margin-bottom: 0;
+        }
+
+        .checkmark {
+            color: #28ca42;
+            font-size: 20px;
+        }
+
+        .badge {
+            position: absolute;
+            top: 50px;
+            right: 50px;
+            background: #ff5722;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 30px;
+            font-weight: bold;
+            transform: rotate(15deg);
+            box-shadow: 0 4px 12px rgba(255, 87, 34, 0.3);
+        }
+
+        .elster-logo {
+            position: absolute;
+            bottom: 40px;
+            left: 50px;
+            opacity: 0.1;
+            font-size: 200px;
+            color: #005a9c;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="browser-mockup">
+            <div class="browser-bar">
+                <div class="browser-dots">
+                    <div class="dot red"></div>
+                    <div class="dot yellow"></div>
+                    <div class="dot green"></div>
+                </div>
+                <div class="url-bar">chrome://extensions/</div>
+            </div>
+            <div class="extension-popup">
+                <div class="popup-content">
+                    <div class="logo"></div>
+                    <h1>Elster Auto-Login</h1>
+                    <p class="tagline">Nie wieder manuell einloggen!</p>
+                    
+                    <button class="login-button">
+                        <span style="font-weight: bold;">→</span> Zu Elster gehen
+                    </button>
+                    
+                    <div class="features">
+                        <div class="feature">
+                            <span class="checkmark">✓</span>
+                            <span>Automatisches Zertifikat-Upload</span>
+                        </div>
+                        <div class="feature">
+                            <span class="checkmark">✓</span>
+                            <span>Sicher verschlüsselt (AES-256)</span>
+                        </div>
+                        <div class="feature">
+                            <span class="checkmark">✓</span>
+                            <span>100% lokal - keine Cloud</span>
+                        </div>
+                        <div class="feature">
+                            <span class="checkmark">✓</span>
+                            <span>Ein-Klick-Login</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="badge">Zeit sparen!</div>
+    <div class="elster-logo" style="width: 200px; height: 200px; background: rgba(0, 90, 156, 0.05); border-radius: 20px;"></div>
+</body>
+</html>

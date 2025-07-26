@@ -1,95 +1,124 @@
 body {
-  width: 400px;
-  min-height: 500px;
+  width: 440px;
+  min-height: 600px;
   margin: 0;
   padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
-  background: #f5f5f5;
+  background: #f9f9f9;
 }
 
 .container {
-  padding: 20px;
+  padding: 0;
 }
 
-h2 {
-  margin: 0 0 20px 0;
-  color: #333;
-  font-size: 20px;
+.header {
+  background: white;
+  padding: 30px;
   text-align: center;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.logo {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 20px;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+h1 {
+  margin: 0 0 10px 0;
+  font-size: 28px;
+  color: #333;
+  font-weight: 600;
+}
+
+.tagline {
+  color: #666;
+  font-size: 16px;
+  margin: 0;
 }
 
 .quick-access {
-  margin-bottom: 20px;
+  padding: 30px;
+  background: white;
 }
 
 .login-button {
   width: 100%;
-  padding: 12px 20px;
+  padding: 16px;
   background: #005a9c;
   color: white;
   border: none;
   border-radius: 6px;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: bold;
   cursor: pointer;
   transition: all 0.3s ease;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
+  gap: 10px;
+  box-shadow: 0 4px 12px rgba(0, 90, 156, 0.3);
 }
 
 .login-button:hover {
   background: #004a7c;
-  transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(0, 90, 156, 0.3);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 90, 156, 0.4);
 }
 
 .login-button:active {
   transform: translateY(0);
-  box-shadow: 0 2px 6px rgba(0, 90, 156, 0.3);
+  box-shadow: 0 2px 8px rgba(0, 90, 156, 0.3);
 }
 
-h3 {
-  margin: 15px 0 10px 0;
-  color: #555;
-  font-size: 16px;
+.arrow {
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .settings-section {
   background: white;
-  border-radius: 8px;
-  padding: 20px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  margin-bottom: 20px;
+  padding: 30px;
+  border-bottom: 1px solid #f0f0f0;
 }
 
 .form-group {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .form-group label {
   display: block;
-  margin-bottom: 5px;
+  margin-bottom: 8px;
   color: #555;
   font-weight: 500;
+  font-size: 14px;
 }
 
 .form-group input[type="text"],
 .form-group input[type="password"],
 .form-group input[type="file"] {
   width: 100%;
-  padding: 8px 12px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
+  padding: 12px 16px;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
   font-size: 14px;
   box-sizing: border-box;
+  transition: border-color 0.2s;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="password"]:focus,
+.form-group input[type="file"]:focus {
+  outline: none;
+  border-color: #005a9c;
 }
 
 .certificate-status {
   margin-top: 8px;
-  padding: 8px;
-  border-radius: 4px;
+  padding: 10px;
+  border-radius: 6px;
   font-size: 13px;
   display: none;
 }
@@ -115,43 +144,49 @@ h3 {
 .button-group {
   display: flex;
   gap: 10px;
-  margin-top: 20px;
+  margin-top: 25px;
 }
 
 .btn-primary,
 .btn-secondary {
   flex: 1;
-  padding: 10px 20px;
+  padding: 12px 20px;
   border: none;
-  border-radius: 4px;
+  border-radius: 6px;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 600;
   cursor: pointer;
-  transition: background-color 0.2s;
+  transition: all 0.2s;
 }
 
 .btn-primary {
   background: #4CAF50;
   color: white;
+  box-shadow: 0 2px 6px rgba(76, 175, 80, 0.3);
 }
 
 .btn-primary:hover {
   background: #45a049;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 10px rgba(76, 175, 80, 0.4);
 }
 
 .btn-secondary {
   background: #f44336;
   color: white;
+  box-shadow: 0 2px 6px rgba(244, 67, 54, 0.3);
 }
 
 .btn-secondary:hover {
   background: #da190b;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 10px rgba(244, 67, 54, 0.4);
 }
 
 .status-message {
   margin-top: 15px;
-  padding: 10px;
-  border-radius: 4px;
+  padding: 12px;
+  border-radius: 6px;
   text-align: center;
   font-size: 14px;
   display: none;
@@ -171,30 +206,69 @@ h3 {
   display: block;
 }
 
-.info-section {
-  background: white;
+.features {
+  background: #f5f5f5;
+  padding: 25px 30px;
   border-radius: 8px;
-  padding: 20px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin: 0 30px 30px;
 }
 
-.info-section ol {
-  margin: 10px 0;
-  padding-left: 20px;
+.feature {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 15px;
+  font-size: 15px;
+  color: #555;
 }
 
-.info-section li {
-  margin-bottom: 5px;
+.feature:last-child {
+  margin-bottom: 0;
+}
+
+.checkmark {
+  color: #28ca42;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.donation-section {
+  background: white;
+  padding: 20px 30px;
+  border-top: 1px solid #f0f0f0;
+}
+
+.donation-section hr {
+  display: none;
+}
+
+.donation-section p {
+  text-align: center;
   color: #666;
-  font-size: 14px;
+  font-size: 13px;
+  margin-bottom: 12px;
 }
 
-.warning {
-  background: #fff3cd;
-  color: #856404;
-  padding: 10px;
-  border-radius: 4px;
-  margin-top: 10px;
-  font-size: 13px;
-  border: 1px solid #ffeaa7;
+.donation-link {
+  display: block;
+  text-align: center;
+  color: #64ad07;
+  text-decoration: none;
+  padding: 12px;
+  background: #f0f8f0;
+  border-radius: 6px;
+  margin: 0;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.donation-link:hover {
+  background: #e5f5e5;
+  transform: translateY(-1px);
+}
+
+.donation-section p:last-child {
+  margin-top: 8px;
+  font-size: 11px;
+  color: #999;
 }

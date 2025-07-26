@@ -7,11 +7,15 @@
 </head>
 <body>
   <div class="container">
-    <h2>Elster Auto-Login</h2>
+    <div class="header">
+      <img src="icon128.png" alt="Elster Auto-Login" class="logo">
+      <h1>Elster Auto-Login</h1>
+      <p class="tagline">Nie wieder manuell einloggen!</p>
+    </div>
     
     <div class="quick-access">
       <button id="loginBtn" class="login-button">
-        🔐 Zu Elster gehen
+        <span class="arrow">→</span> Zu Elster gehen
       </button>
     </div>
     
@@ -43,16 +47,23 @@
       <div id="status" class="status-message"></div>
     </div>
     
-    <div class="info-section">
-      <h3>Anleitung:</h3>
-      <ol>
-        <li>Aktivieren Sie Auto-Login</li>
-        <li>Wählen Sie Ihre Zertifikatsdatei (.pfx) aus</li>
-        <li>Geben Sie Ihr Elster-Passwort ein</li>
-        <li>Klicken Sie auf Speichern</li>
-        <li>Beim nächsten Besuch von elster.de werden Zertifikat und Passwort automatisch eingefügt</li>
-      </ol>
-      <p class="warning">⚠️ Die Zertifikatsdatei wird verschlüsselt in Ihrem Browser gespeichert.</p>
+    <div class="features">
+      <div class="feature">
+        <span class="checkmark">✓</span>
+        <span>Automatisches Zertifikat-Upload</span>
+      </div>
+      <div class="feature">
+        <span class="checkmark">✓</span>
+        <span>Sicher verschlüsselt (AES-256)</span>
+      </div>
+      <div class="feature">
+        <span class="checkmark">✓</span>
+        <span>100% lokal - keine Cloud</span>
+      </div>
+      <div class="feature">
+        <span class="checkmark">✓</span>
+        <span>Ein-Klick-Login</span>
+      </div>
     </div>
     
     <div class="donation-section">
