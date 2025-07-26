@@ -42,7 +42,7 @@
 Diese Extension ist kostenlos und Open Source. Wenn sie Ihnen Zeit spart, freuen wir uns über:
 - ⭐ Einen Stern auf GitHub
 - 💬 Feedback und Verbesserungsvorschläge
-- ☕ [Eine kleine Spende](https://github.com/sponsors/IhrGitHubUsername)
+- ☕ [Eine kleine Spende](https://buymeacoffee.com/holyghee)
 
 ---
 
