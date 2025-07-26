@@ -1,0 +1,22 @@
+node_modules/
+.DS_Store
+*.log
+*.tmp
+.env
+package-lock.json
+
+# Test files
+test-*.js
+debug-*.js
+
+# Archives
+*.tar.gz
+*.zip
+*.crx
+
+# Editor
+.vscode/
+.idea/
+
+# System files
+Thumbs.db
