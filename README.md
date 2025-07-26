@@ -1,115 +1,66 @@
-# 🔐 Elster Auto-Login Chrome Extension
+# Elster Auto-Login Extension
 
-Eine Chrome-Erweiterung, die die Anmeldung bei Elster.de mit Zertifikatsdatei automatisiert.
+![Elster Auto-Login Banner](chrome-store-werbekachel-gross.jpg)
 
-## ✨ Funktionen
+Eine Chrome-Extension, die das Login bei Elster (elster.de) mit Zertifikatsdatei automatisiert.
 
-### Automatische Anmeldung
-- **Zertifikat-Upload**: Lädt automatisch Ihre gespeicherte .pfx/.p12 Zertifikatsdatei hoch
-- **Passwort-Eingabe**: Füllt das Passwortfeld automatisch aus
-- **Login-Button**: Klickt automatisch auf den "Bestätigen"-Button
-- **Sofort einsatzbereit**: Funktioniert beim Aufrufen von elster.de ohne weitere Interaktion
+## ✨ Features
 
-### Sicherheit & Datenschutz
-- **Lokale Speicherung**: Alle Daten werden nur lokal auf Ihrem Computer gespeichert
-- **Starke Verschlüsselung**: Passwörter werden mit AES-256-GCM verschlüsselt (Web Crypto API)
-- **Keine Cloud**: Keine Daten werden an externe Server gesendet
-- **Open Source**: Der komplette Quellcode ist einsehbar
-- **Datenschutz**: Siehe detaillierte [Datenschutzerklärung](DATENSCHUTZ.md)
+- 🔐 **Automatisches Zertifikat-Upload** - Nie wieder manuell die .pfx-Datei auswählen
+- 🔒 **Sicher verschlüsselt** - Militärgrade AES-256-GCM Verschlüsselung
+- 💻 **100% lokal** - Ihre Daten verlassen niemals Ihren Computer
+- ⚡ **Ein-Klick-Login** - Direkt zu Elster mit einem Klick
 
-### Fehlerbehandlung
-- **Zertifikatsprüfung**: Erkennt automatisch ungültige oder abgelaufene Zertifikate
-- **Benutzerhinweise**: Zeigt deutliche Warnmeldungen bei Problemen
-- **Anleitung zur Fehlerbehebung**: Schritt-für-Schritt Anleitungen direkt in der Warnung
-- **Browser-Benachrichtigungen**: Informiert über wichtige Ereignisse
-
-## 📋 Voraussetzungen
-
-- Google Chrome Browser
-- Gültige Elster-Zertifikatsdatei (.pfx oder .p12)
-- Passwort für die Zertifikatsdatei
+![Screenshot](chrome-store-screenshot.jpg)
 
 ## 🚀 Installation
 
-### Option 1: Entwicklermodus (Empfohlen für Privatnutzer)
-1. Chrome öffnen und `chrome://extensions/` aufrufen
-2. "Entwicklermodus" oben rechts aktivieren
-3. "Entpackte Erweiterung laden" klicken
-4. Den Ordner `elster-extension-release` auswählen
+### Chrome Web Store (Empfohlen)
+Die Extension ist im Chrome Web Store verfügbar (Link folgt nach Freigabe).
 
-### Option 2: Chrome Web Store (Für öffentliche Verteilung)
-- Die Extension kann im Chrome Web Store veröffentlicht werden
-- Siehe `CHROME_STORE_ANLEITUNG.md` für Details
+### Manuelle Installation
+1. Laden Sie die neueste Version von den [Releases](https://github.com/holyghee/elster-auto-login-extension/releases) herunter
+2. Entpacken Sie die ZIP-Datei
+3. Öffnen Sie Chrome und gehen Sie zu `chrome://extensions/`
+4. Aktivieren Sie den "Entwicklermodus" oben rechts
+5. Klicken Sie auf "Entpackte Erweiterung laden"
+6. Wählen Sie den entpackten Ordner aus
 
-## 🎯 Verwendung
+## 📖 Verwendung
 
-1. **Einrichtung** (einmalig):
-   - Klicken Sie auf das Elster-Icon in der Chrome-Toolbar
-   - Wählen Sie Ihre .pfx Zertifikatsdatei aus
-   - Geben Sie Ihr Passwort ein
-   - Aktivieren Sie "Auto-Login aktivieren"
-   - Klicken Sie auf "Speichern"
+1. Klicken Sie auf das Extension-Icon in Chrome
+2. Aktivieren Sie "Auto-Login aktivieren"
+3. Wählen Sie Ihre Elster-Zertifikatsdatei (.pfx) aus
+4. Geben Sie Ihr Passwort ein
+5. Klicken Sie auf "Speichern"
 
-2. **Automatische Anmeldung**:
-   - Besuchen Sie elster.de
-   - Die Extension erkennt die Login-Seite automatisch
-   - Zertifikat und Passwort werden automatisch eingefügt
-   - Der Login erfolgt automatisch
+Beim nächsten Besuch von elster.de werden Zertifikat und Passwort automatisch eingefügt!
 
-3. **Bei Problemen**:
-   - Die Extension zeigt eine rote Warnung bei Zertifikatsfehlern
-   - Folgen Sie den Anweisungen in der Warnung
-   - Laden Sie ggf. ein neues Zertifikat von Elster herunter
+## 🔒 Sicherheit
 
-## 🔧 Technische Details
+- Alle Daten werden lokal in Ihrem Browser gespeichert
+- Passwörter werden mit AES-256-GCM verschlüsselt
+- Keine Datenübertragung an externe Server
+- Open Source Code zur Überprüfung
 
-### Dateien
-- `manifest.json` - Extension-Konfiguration
-- `background.js` - Hintergrund-Service für Tab-Überwachung
-- `content.js` - Interaktion mit der Elster-Webseite
-- `popup.html/js/css` - Benutzeroberfläche der Extension
-- `icon*.png` - Extension-Icons in verschiedenen Größen
+## 🤝 Unterstützung
 
-### Berechtigungen
-- `storage` - Zum Speichern der Zugangsdaten
-- `activeTab` - Zum Interagieren mit der aktuellen Seite
-- `scripting` - Zum Ausführen von Skripten auf elster.de
-- `notifications` - Für Fehlerbenachrichtigungen
+Gefällt Ihnen diese Extension? 
 
-### Sicherheitsmerkmale
-- Funktioniert nur auf `*.elster.de` Domains
-- Keine externen Abhängigkeiten
-- Minimale Berechtigungen
-- Transparenter Quellcode
+[![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-Unterstützen-yellow.svg?style=for-the-badge)](https://buymeacoffee.com/holyghee)
 
-## ⚠️ Wichtige Hinweise
+## 📋 Lizenz
 
-- **Sicherheit**: Bewahren Sie Ihre Zertifikatsdatei sicher auf
-- **Updates**: Bei Zertifikatserneuerung müssen Sie die neue Datei in der Extension hinterlegen
-- **Browser-Wechsel**: Die Zugangsdaten müssen bei einem Browser-Wechsel neu eingegeben werden
-- **Entwicklermodus**: Muss aktiviert bleiben, damit die Extension funktioniert
+Diese Extension ist unter der MIT-Lizenz veröffentlicht. Siehe [LICENSE](LICENSE) für Details.
 
-## 🆘 Fehlerbehebung
+## 🔗 Links
 
-**Extension funktioniert nicht?**
-- Prüfen Sie, ob der Entwicklermodus aktiviert ist
-- Laden Sie die Extension neu (Reload-Button)
-- Löschen Sie den Browser-Cache
-
-**Login schlägt fehl?**
-- Überprüfen Sie, ob Ihr Zertifikat noch gültig ist
-- Kontrollieren Sie Ihr Passwort
-- Laden Sie ggf. ein neues Zertifikat von Elster herunter
-
-**Zertifikat wird nicht erkannt?**
-- Stellen Sie sicher, dass es eine .pfx oder .p12 Datei ist
-- Die Datei darf nicht beschädigt sein
-- Versuchen Sie, die Datei manuell bei Elster hochzuladen
-
-## 📄 Lizenz
-
-Diese Extension ist für den privaten Gebrauch bestimmt. Bei Weitergabe oder Veröffentlichung beachten Sie die geltenden Bestimmungen.
+- [Datenschutzerklärung](https://holyghee.github.io/elster-auto-login-extension/privacy-policy.html)
+- [GitHub Repository](https://github.com/holyghee/elster-auto-login-extension)
+- [Probleme melden](https://github.com/holyghee/elster-auto-login-extension/issues)
 
 ---
 
-Bei Fragen oder Problemen erstellen Sie gerne ein Issue oder kontaktieren Sie den Entwickler.
+![Elster Auto-Login Features](chrome-store-werbekachel-klein.jpg)
+
+Made with ❤️ in Germany
